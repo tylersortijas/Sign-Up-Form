@@ -1,0 +1,94 @@
+:root {
+    --color-form-: #596D48;
+    --color-invalid: red;
+    --color-focus: blue;
+    --left-space: 48px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./Norse-Bold.otf);
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Image Side */
+.left-side {
+    background-image: url("./img/green_background.avif");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    font-family: "Norse Bold";
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner img {
+    width: 25%;
+    height: auto;
+}
+
+.attribution {
+    font-size: .9rem;
+}
+
+.attribution a {
+    color: white;
+
+}
+
+/* Text Side */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.title  {
+    margin: 0;
+    font-size: 1.4rem;
+    margin-left: var(--left-space); 
+    max-width: 80%;
+    margin-bottom: 8px;
+}
+
+.title-sub-msg {
+    margin-top: 15px;
+}
+
+.form-section {
+    color: black;
+    background-color: white;
+    margin-top: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: var(--left-space);
+}
